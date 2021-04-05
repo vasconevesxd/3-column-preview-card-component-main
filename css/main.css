@@ -1,0 +1,71 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --darker-cyan: hsl(179, 100%, 13%);
+
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --lightener-gray: hsl(0, 0%, 95%);
+}
+
+@font-face {
+  font-family: LexendDeca;
+  src: url("../fonts/LexendDeca-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: BigShouldersDisplay;
+  src: url("../fonts/BigShouldersDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+html {
+  box-sizing: initial;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  background-color: var(--lightener-gray);
+  font-family: "LexendDeca";
+}
+
+.container {
+  margin: auto;
+  width: 50%;
+}
+
+.card {
+  padding: 1.3333rem;
+
+}
+
+#sedans {
+    background-color: var(--bright-orange);
+}
+#suvs {
+    background-color:var(--dark-cyan);
+}
+#luxury {
+    background-color:var(--darker-cyan);
+}
+
+@media (min-width: 96rem) {
+  .container {
+    margin: 6rem auto;
+  }
+  .card-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
