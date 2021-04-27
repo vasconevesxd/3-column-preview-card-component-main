@@ -75,7 +75,7 @@ h1 {
   border-radius: 1.6667rem;
   background-color: var(--lightener-gray);
   border: 0;
-  padding: 0.9333rem 2.6667rem;
+  padding: 0.6333rem 1.6667rem;
   font-weight: 600;
   border: 0.1333rem solid transparent;
    cursor: pointer;
@@ -103,7 +103,7 @@ h1 {
   color: var(--darker-cyan);
 }
 
-@media (min-width: 96rem) {
+@media (min-width: 90rem) {
   .container {
     width: 50%;
     margin: 13.3333rem auto;
@@ -116,10 +116,12 @@ h1 {
   }
 
   .card {
-    padding: 2.4rem 3.6667rem 0 3.6rem;
+
     height: auto;
   }
-
+  .button{
+    padding: 0.9333rem 2.6667rem;
+  }
   #sedans {
     border-radius: 0.4rem 0 0 0.4rem;
   }
